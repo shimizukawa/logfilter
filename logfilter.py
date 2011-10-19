@@ -2,6 +2,16 @@
 """
 AUTHOR: Takayuki SHIMIZUKAWA <shimizukawa at gmail.com>
 LICENSE: MIT
+CLASSIFIERS:
+    Programming Language :: Python
+    Programming Language :: Python :: 2
+    Programming Language :: Python :: 2.4
+    Programming Language :: Python :: 2.5
+    Programming Language :: Python :: 2.6
+    Programming Language :: Python :: 2.7
+    Programming Language :: Python :: 3
+    Programming Language :: Python :: 3.2
+
 
 logfilter prepend date/time and some field to every INPUT text lines.
 ex::
@@ -78,6 +88,6 @@ def main(config_file=None):
 if __name__ == '__main__':
     options, args = parse_options(sys.argv)
     if options.create_config:
-        print CONFIG_TEMPLATE
+        print(CONFIG_TEMPLATE)
     else:
         main(options.config)
