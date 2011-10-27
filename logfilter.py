@@ -1,5 +1,4 @@
 # -*- coding: utf8 -*-
-__name__ = 'logfilter'
 __description__ = \
     'logfilter prepend date/time and some field to every INPUT text lines.'
 __version__ = "0.9.1"
