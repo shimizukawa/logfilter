@@ -2,7 +2,7 @@
 __name__ = 'logfilter'
 __description__ = \
     'logfilter prepend date/time and some field to every INPUT text lines.'
-__version__ = "0.9"
+__version__ = "0.9.1"
 __author__ = 'Takayuki SHIMIZUKAWA'
 __author_email__ = 'shimizukawa at gmail.com'
 __license__ = 'MIT License'
@@ -98,9 +98,13 @@ def main(config_file=None):
         logger.info(line.rstrip())
 
 
-if __name__ == '__main__':
+def console():
     options, args = parse_options(sys.argv)
     if options.create_config:
         print(CONFIG_TEMPLATE)
     else:
         main(options.config)
+
+
+if __name__ == '__main__':
+    console()

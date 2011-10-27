@@ -22,6 +22,6 @@ setup(
     ],
     entry_points="""
         [console_scripts]
-        logfilter = logfilter:main
+        logfilter = logfilter:console
     """,
 )
