@@ -1,7 +1,7 @@
 # -*- coding: utf8 -*-
 __description__ = \
     'logfilter prepend date/time and some field to every INPUT text lines.'
-__version__ = "0.9.1"
+__version__ = "0.9.2"
 __author__ = 'Takayuki SHIMIZUKAWA'
 __author_email__ = 'shimizukawa at gmail.com'
 __license__ = 'MIT License'
@@ -47,6 +47,11 @@ If you want to change log format::
 
 History
 ========
+0.9.2 2011/10/27
+-----------------
+* fix: log streaming output to error console.
+* fix: __name__ overriding break `__name__ == '__main__'` statement.
+
 0.9.1 2011/10/27
 -----------------
 * fix: console command can't handle option parameters.
