@@ -23,10 +23,12 @@ __classifiers__ = [
 __doc__ = """
 %(__description__)s
 
-AUTHOR: %(__author__)s <%(__author_email__)s>
-LICENSE: %(__license__)s
+:AUTHOR: %(__author__)s <%(__author_email__)s>
+:LICENSE: %(__license__)s
 
-ex::
+Using sample
+=============
+::
 
     $ ls
     file1   file2  file3
@@ -43,6 +45,16 @@ If you want to change log format::
     $ ls |python logfilter.py -c log.conf
     Wed, 19 Oct 2011 15:44:39 - root - INFO - log.conf
     Wed, 19 Oct 2011 15:44:39 - root - INFO - logfilter.py
+
+History
+========
+0.9.1 2011/10/27
+-----------------
+* fix: console command can't handle option parameters.
+
+0.9.0 2011/10/27
+-----------------
+* first release
 
 """ % locals()
 
