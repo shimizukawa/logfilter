@@ -63,7 +63,7 @@ import logging
 import logging.config
 
 FORMAT = "%(asctime)-15s %(message)s"
-logging.basicConfig(format=FORMAT, level=logging.INFO)
+logging.basicConfig(format=FORMAT, level=logging.INFO, stream=sys.stdout)
 
 
 CONFIG_TEMPLATE = """\
