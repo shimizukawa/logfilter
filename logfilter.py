@@ -1,19 +1,31 @@
 # -*- coding: utf8 -*-
-"""
-AUTHOR: Takayuki SHIMIZUKAWA <shimizukawa at gmail.com>
-LICENSE: MIT
-CLASSIFIERS:
-    Programming Language :: Python
-    Programming Language :: Python :: 2
-    Programming Language :: Python :: 2.4
-    Programming Language :: Python :: 2.5
-    Programming Language :: Python :: 2.6
-    Programming Language :: Python :: 2.7
-    Programming Language :: Python :: 3
-    Programming Language :: Python :: 3.2
+__name__ = 'logfilter'
+__description__ = \
+    'logfilter prepend date/time and some field to every INPUT text lines.'
+__version__ = "0.9"
+__author__ = 'Takayuki SHIMIZUKAWA'
+__author_email__ = 'shimizukawa at gmail.com'
+__license__ = 'MIT License'
+__classifiers__ = [
+    'Programming Language :: Python',
+    'Programming Language :: Python :: 2',
+    'Programming Language :: Python :: 2.4',
+    'Programming Language :: Python :: 2.5',
+    'Programming Language :: Python :: 2.6',
+    'Programming Language :: Python :: 2.7',
+    'Programming Language :: Python :: 3',
+    'Programming Language :: Python :: 3.2',
+    'License :: OSI Approved :: MIT License',
+    'Development Status :: 4 - Beta',
+    'Topic :: System :: Logging',
+    'Intended Audience :: System Administrators',
+]
+__doc__ = """
+%(__description__)s
 
+AUTHOR: %(__author__)s <%(__author_email__)s>
+LICENSE: %(__license__)s
 
-logfilter prepend date/time and some field to every INPUT text lines.
 ex::
 
     $ ls
@@ -32,7 +44,8 @@ If you want to change log format::
     Wed, 19 Oct 2011 15:44:39 - root - INFO - log.conf
     Wed, 19 Oct 2011 15:44:39 - root - INFO - logfilter.py
 
-"""
+""" % locals()
+
 
 import sys
 import logging
